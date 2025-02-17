@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            display: flex;
+            height: 10vh;
+            align-items: center;
+            gap: 800px;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+
+        .btn {
+            border: 2px solid aquamarine;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+            background-color: aqua;
+        }
+
+        .cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            height: 100vh;
+           
+        }
+
+
+        .ele {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid rgba(200, 200, 200, 0.3);
+            border-radius: 10px;
+            text-align: center;
+            height: 150px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_logo">
+            <img class="logo_main" src="scrapify_main2.png" height="70px" width="240px" alt="scrapifylogo">
+        </div>
+        <div class="nav_cont">
+            <button class="btn">Request Pickup</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="cont">
+            <div class="ele">BUY</div>
+            <div class="ele">SELL</div>
+        </div>
+    </div>
+</body>
+
+</html>
