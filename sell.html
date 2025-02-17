@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Gadgets Store - Sell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product-card {
+            background: linear-gradient(to bottom right, red, yellow, green);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 20px;
+            width: 280px;
+            text-align: center;
+            flex: 0 1 calc(23.33% - 30px);
+            transition: all 0.3s ease-in-out;
+            --clr: #FF5733;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-info h4 {
+            margin: 10px 0;
+            color: white;
+        }
+        .product-info p {
+            color: #eee;
+            font-size: 14px;
+        }
+        .buy-btn {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-btn:hover {
+            background: #218838;
+        }
+        .product-card:hover {
+            border: 4px solid var(--clr);
+            filter: drop-shadow(0 0 15px var(--clr));
+        }
+        /* Sell Form Styles */
+        .sell-form {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            color: white;
+        }
+        .sell-form input,
+        .sell-form select,
+        .sell-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+        .sell-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .sell-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electronics Gadgets Store - Sell Your Product</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+   
+ 
+    
+    <!-- Sell Form -->
+    <div class="sell-form">
+        <h3>Sell Your Product</h3>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required placeholder="Enter product name">
+            
+            <label for="product-description">Product Description:</label>
+            <textarea id="product-description" name="product-description" rows="4" required placeholder="Enter product description"></textarea>
+            
+            <label for="product-price">Price ($):</label>
+            <input type="number" id="product-price" name="product-price" required placeholder="Enter product price">
+            
+            <label for="product-category">Category:</label>
+            <select id="product-category" name="product-category" required>
+                <option value="smartphones">Smartphones</option>
+                <option value="laptops">Laptops</option>
+                <option value="smartwatches">Smartwatches</option>
+                <option value="headphones">Headphones</option>
+                <option value="speakers">Speakers</option>
+                <option value="accessories">Accessories</option>
+                <option value="appliances">Appliances</option>
+                <option value="televisions">Televisions</option>
+            </select>
+            
+            <!-- Product Image Upload -->
+            <label for="product-image">Upload Product Image:</label>
+            <input type="file" id="product-image" name="product-image" accept="image/*" required>
+            
+            <button type="submit">List Your Product</button>
+        </form>
+    </div>
+</body>
+</html>

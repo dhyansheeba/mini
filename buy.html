@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Gadgets Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black; /* Set background color to black */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product-card {
+            background: linear-gradient(to bottom right, red, yellow, green); /* Red, Yellow, Green gradient */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 20px;
+            width: 280px;
+            text-align: center;
+            flex: 0 1 calc(23.33% - 30px); /* Responsive layout */
+            transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+            --clr: #FF5733; /* Set default color for hover effect */
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-info h4 {
+            margin: 10px 0;
+            color: white; /* White text color for titles */
+        }
+        .product-info p {
+            color: #eee; /* Lighter text for descriptions */
+            font-size: 14px;
+        }
+        .buy-btn {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-btn:hover {
+            background: #218838;
+        }
+        /* Hover effect for product cards */
+        .product-card:hover {
+            border: 4px solid var(--clr); /* Border color changes on hover */
+            filter: drop-shadow(0 0 15px var(--clr)); /* Shadow effect with dynamic color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electronics Gadgets Store</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="product-card">
+            <div class="product-info">
+                <h4>Smartphone XYZ</h4>
+                <p>High-performance smartphone with latest features.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h4>Laptop ABC</h4>
+                <p>Powerful laptop for work and play.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h4>Smartwatch 123</h4>
+                <p>Track your fitness and stay connected.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h4>Wireless Headphones</h4>
+                <p>Premium sound quality, wireless convenience.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h4>Bluetooth Speaker</h4>
+                <p>Compact speaker with rich sound and portability.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h4>Home appliences</h4>
+                <p>Compact speaker with rich sound and portability.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h4>Electronic Accessories</h4>
+                <p>Compact speaker with rich sound and portability.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h4>Television</h4>
+                <p>Compact speaker with rich sound and portability.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
