@@ -1,0 +1,79 @@
+.nav {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    gap: 800px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.btn{
+    border: 2px solid aquamarine;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    background-color: aqua;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont_flex1{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rationale", serif;
+    font-size: x-large;
+}
+
+.contbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    /*border: 2px solid black;*/
+    border-radius: 10px;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.cont_title {
+    font-family: "Nova Mono", serif;
+    font-size: xx-large;
+    text-align: center;
+    /* This centers the text horizontally */
+    width: 100%;
+    /* Ensures the container takes up the full width */
+}
+
+.contele {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ele {
+    border: 3px solid rgba(200, 200, 200, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    height: 250px;
+    width: 300px;
+}
+
+.item {
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+}
